@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center"
+    android:background="@drawable/bgmobile"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/_imageDetail"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:src="@drawable/bohemian" />
+
+    <TextView
+        android:id="@+id/imageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="title"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold"
+        android:layout_below="@id/_imageDetail"
+        android:layout_marginTop="5dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/imageDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="desc "
+        android:textStyle="bold"
+        android:textColor="@color/cardview_light_background"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/imageTitle"/>
+</RelativeLayout>
